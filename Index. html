@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>røla</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#1b1740;color:#fff;font-family:system-ui,sans-serif;display:flex;justify-content:center;min-height:100vh}
+#app{width:100%;max-width:520px;padding:12px}
+#top{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 8px;font-size:14px}
+#top b{font-size:18px}
+canvas{width:100%;border-radius:12px;display:block;touch-action:manipulation;background:#000}
+#row{display:flex;gap:10px;margin-top:10px}
+button{height:52px;font-size:17px;border-radius:10px;border:0;background:#fff;color:#1b1740;font-weight:600;touch-action:manipulation}
+#b{flex:1}
+#m{width:90px;font-size:14px}
+#msg{font-size:13px;opacity:.85;margin:10px 0 0;min-height:18px}
+</style>
+</head>
+<body>
+<div id="app">
+<div id="top"><b>røla</b><span>Score <span id="sc">0</span> · Record <span id="hs">0</span> · Niveau <span id="wd">1</span>/5</span></div>
+<canvas id="c" width="360" height="220"></canvas>
+<div id="row"><button id="b">Sauter</button><button id="m" aria-label="Couper ou remettre le son">Son : oui</button></div>
+<p id="msg">Touche « Les mondes » ou « Les personnages » pour les découvrir avant de jouer. Un niveau = 2000 points.</p>
+</div>
+<script src="g.js"></script>
+</body>
+</html>
