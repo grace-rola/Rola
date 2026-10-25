@@ -26,5 +26,9 @@ button{height:52px;font-size:17px;border-radius:10px;border:0;background:#fff;co
 <p id="msg">Touche « Les mondes » ou « Les personnages » pour les découvrir avant de jouer. Un niveau = 2000 points.</p>
 </div>
 <script src="g.js"></script>
-</body>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script></body>
 </html>
