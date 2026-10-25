@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>røla</title>
+<title>røla</title><link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1b1233">
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:#1b1740;color:#fff;font-family:system-ui,sans-serif;display:flex;justify-content:center;min-height:100vh}
@@ -27,6 +28,10 @@ button{height:52px;font-size:17px;border-radius:10px;border:0;background:#fff;co
 </div>
 <script src="g.js"></script>
 <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script><script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js");
 }
